@@ -1,4 +1,15 @@
+/* 
+Ho deciso di creare una navbar completamente in JS e CSS perché
+potesse essere dinamicamente creata in ogni pagina, senza
+la necessità di copiare il codice in ogni singola pagina HTML
+del sito.
+ */
+
+// Contenitore della Navbar
 const headerEl = document.querySelector("header");
+
+// Array contenente tutti i dati che verranno utilizzati per
+// creare la Navbar, in ordine: id, Testo, Link di riferimento
 const navbarContent = [
     [0, "Home", "#home"],
     [1, "Negozio", "#"],
@@ -7,8 +18,10 @@ const navbarContent = [
     [4, "Contattaci", "#"]
 ];
 
+// Percorso da dove verrà caricato il logo da inserire nella Nav
 const logoPath = "/risorse/logo/logo-brumbrum1.jpg";
 
+// Carica la navbar al load della pagina
 window.onload = () => {
     navbarBuilder(navbarContent);
 }
