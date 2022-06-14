@@ -1,0 +1,52 @@
+header nav,
+ul {
+    display: flex;
+}
+header nav {
+    justify-content: space-between;
+    background-color: rgb(148, 148, 148);
+    border-bottom: 2px solid black;
+}
+header nav ul {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    justify-content: flex-end;
+    align-items: center;
+}
+header nav div,
+header nav div a {
+    display: flex;
+    width: fit-content;
+    max-width: 500px;
+    min-width: 150px;
+}
+header nav div a img {
+    position: relative;
+    width: 100%;
+    object-fit: contain;
+    cursor: pointer;
+    left: 5px;
+}
+header nav ul li {
+    cursor: pointer;
+    padding: 0 10px;
+    transition: background-color .2s ease;
+}
+header nav ul li:hover {
+    background-color: black;
+}
+header nav ul li:hover a {
+    color: white;
+}
+header nav ul li a {
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: bolder;
+    transition: color .2s ease;
+}
